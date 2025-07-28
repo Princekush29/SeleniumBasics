@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -5,14 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class GetTableValue extends Test1 {
+public class GetTableValue extends BaseTest {
 
 	Helper h = new Helper();
 
 	@Test
-	public void tableValue() {
+	public void tableValue() throws IOException {
 		int sum = 0;
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		h.screenshot();
 		WebElement ele = driver.findElement(By.xpath("//th[text()='Name']"));
 		h.scrollDown(ele);
 		List<WebElement> list = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));

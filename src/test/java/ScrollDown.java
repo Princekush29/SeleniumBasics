@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class ScrollDown extends Test1 {
+public class ScrollDown extends BaseTest {
 
 	Helper h = new Helper();
 

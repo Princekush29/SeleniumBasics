@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CalenderTest extends Test1 {
+public class CalenderTest extends BaseTest {
 
 	Helper h = new Helper();
 
