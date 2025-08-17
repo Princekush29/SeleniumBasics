@@ -33,6 +33,3 @@ public class Helper extends BaseTest {
 		FileUtils.copyFile(src, new File("C:\\Users\\Prince Kushwaha\\Desktop\\docs\\screenshot.png"));
 	}
 }
-
-
-

@@ -46,11 +46,11 @@ public class MultipleWindowsAndTabs extends BaseTest {
 		File src1 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src1, new File("C:\\Users\\Prince Kushwaha\\Desktop\\docs\\test1.png"));
 
-		//get particular element screenshot
+		// get particular element screenshot
 		File src2 = element.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src2, new File("C:\\Users\\Prince Kushwaha\\Desktop\\docs\\test2.png"));
 
-		//get Full Page screenshot
+		// get Full Page screenshot
 		File src = ((FirefoxDriver) driver).getFullPageScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File("C:\\Users\\Prince Kushwaha\\Desktop\\docs\\test2.png"));
 

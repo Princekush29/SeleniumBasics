@@ -94,29 +94,16 @@ public class Streams2 {
 
 	@Test
 	public void sortIntergerArrayUsingStreams() {
-		List<Integer> values = Arrays.asList(1,1,3,5,6,7,8,2,4,6,7);
-		values.stream().distinct().forEach(s->System.out.println(s));	
+		List<Integer> values = Arrays.asList(1, 1, 3, 5, 6, 7, 8, 2, 4, 6, 7);
+		values.stream().distinct().forEach(s -> System.out.println(s));
 		System.out.println("2");
-		values.stream().sorted().forEach(s->System.out.println(s));
+		values.stream().sorted().forEach(s -> System.out.println(s));
 		System.out.println("22");
-		values.stream().distinct().sorted().forEach(s->System.out.println(s));
+		values.stream().distinct().sorted().forEach(s -> System.out.println(s));
 		System.out.println("222");
-		values.stream().sorted().sequential().forEach(s->System.out.println(s));
+		values.stream().sorted().sequential().forEach(s -> System.out.println(s));
 		System.out.println("2222");
-		values.stream().sorted(Comparator.reverseOrder()).forEach(s->System.out.println(s));
+		values.stream().sorted(Comparator.reverseOrder()).forEach(s -> System.out.println(s));
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

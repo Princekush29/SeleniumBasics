@@ -45,7 +45,7 @@ public class FindLinksInFooter extends BaseTest {
 		}
 		Set<String> s = driver.getWindowHandles();
 		for (String title : s) {
-			System.out.println("Title is "+driver.switchTo().window(title).getTitle());
+			System.out.println("Title is " + driver.switchTo().window(title).getTitle());
 		}
 
 	}

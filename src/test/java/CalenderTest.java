@@ -42,8 +42,8 @@ public class CalenderTest extends BaseTest {
 		List<WebElement> actualList = driver.findElements(By.cssSelector(".react-date-picker__inputGroup__input"));
 		for (int i = 0; i < actualList.size(); i++) {
 			String actuallValue = actualList.get(i).getAttribute("value");
-			System.out.println("Actual value is "+ actuallValue);
-			System.out.println("Expected value is "+ expectedValue[i]);
+			System.out.println("Actual value is " + actuallValue);
+			System.out.println("Expected value is " + expectedValue[i]);
 			Assert.assertEquals(actuallValue, expectedValue[i]);
 		}
 

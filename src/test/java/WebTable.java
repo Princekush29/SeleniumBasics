@@ -63,15 +63,7 @@ public class WebTable extends BaseTest {
 		List<WebElement> veggies = driver.findElements(By.xpath("//td//td[1]"));
 		List<WebElement> filterList = veggies.stream().filter(veggie -> veggie.getText().contains("Rice"))
 				.collect(Collectors.toList());
-		Assert.assertEquals(veggies.size(),filterList.size());
+		Assert.assertEquals(veggies.size(), filterList.size());
 
 	}
 }
-
-
-
-
-
-
-
-
