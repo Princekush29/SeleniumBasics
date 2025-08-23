@@ -15,7 +15,7 @@ public class BaseTest {
 		// required
 		WebDriverManager.chromedriver().setup();// need a maven dependency
 		driver = new ChromeDriver();
-
+		
 		// For Selenium manager - need only line no. 15 - no maven dependency required
 		// WebDriver driver = new ChromeDriver();// Selenium Manager
 
