@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.util.List;
 
@@ -25,7 +26,8 @@ public class BrokenLinks extends BaseTest {
 
 	public static void verifyUrl(String url) throws IOException {
 
-		URL link = new URL(url);
+		//URL link = new URL(url);
+		URL link = URI.create(url).toURL();
 		HttpURLConnection httpURLConnection = (HttpURLConnection) link.openConnection();
 		/*
 		 * httpURLConnection.setConnectTimeout(3000); // Set connection timeout to 3

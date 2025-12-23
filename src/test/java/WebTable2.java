@@ -26,11 +26,11 @@ public class WebTable2 extends BaseTest {
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 		driver.findElement(By.xpath("//span[@class='sort-icon sort-descending']")).click();
 		List<WebElement> elememt = driver.findElements(By.xpath("//tr/td[1]"));
-		List<String> vegName = elememt.stream().map(s -> s.getText()).collect(Collectors.toList());
+		//List<String> vegName = elememt.stream().map(s -> s.getText()).collect(Collectors.toList());
 		elememt.stream().map(s -> s.getText()).forEach(s -> System.out.println(s));
 
 		List<WebElement> elememt1 = driver.findElements(By.xpath("/tr/td[2]"));
-		List<String> priceList = elememt1.stream().map(s -> s.getText()).collect(Collectors.toList());
+		//List<String> priceList = elememt1.stream().map(s -> s.getText()).collect(Collectors.toList());
 		elememt1.stream().map(s -> s.getText()).forEach(s -> System.out.println(s));
 
 		List<String> price;

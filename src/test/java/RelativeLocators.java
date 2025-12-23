@@ -2,7 +2,6 @@ import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.annotations.Test;
 
 public class RelativeLocators extends BaseTest {
